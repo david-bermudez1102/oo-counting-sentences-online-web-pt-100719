@@ -33,7 +33,7 @@ class String
     count = 0
     array = self.split(" ")
     while count<array.length do
-      if(array[(array.length)-1].include?(".") || array[(array.length)-1].question? || array[(array.length)-1].exclamation?)
+      if(array[count].include?(".") || array[count].include?("!") || array[count].include?("?"))
         count += 1
       end
     end
