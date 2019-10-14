@@ -3,7 +3,7 @@ require 'pry'
 class String
 
   def sentence?
-    array = self.split("")
+    array = self.split(" ")
     true if(array[(array.length)-1].include?("."))
   end
 
