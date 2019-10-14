@@ -32,11 +32,12 @@ class String
   def count_sentences
     count = 0
     array = self.split(" ")
-    while count<array.length do
-      if(array[count].include?(".") || array[count].include?("!") || array[count].include?("?"))
+    array.each { |word|
+      if(word.include?(".") || word.include?("!") || word.include?("?"))
         count += 1
       end
-    end
+    }
+    
     count
   end
 end
