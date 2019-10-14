@@ -30,6 +30,9 @@ class String
   end
 
   def count_sentences
-
+    count = 0
+    if(array[(array.length)-1].include?("!"))
+      count += 1
+    end
   end
 end
