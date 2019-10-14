@@ -31,7 +31,8 @@ class String
 
   def count_sentences
     count = 0
-    while(self.sentence? || self.question? || self.exclamation?)
+    array = self.split(" ")
+    while(self.sentence? || self.question? || self.exclamation?) && count<array.length
       count += 1
     end
   end
