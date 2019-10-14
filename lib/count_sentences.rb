@@ -37,5 +37,6 @@ class String
         count += 1
       end
     end
+    count
   end
 end
