@@ -4,7 +4,11 @@ class String
 
   def sentence?
     array = self.split(" ")
-    true if(array[(array.length)-1].include?("."))
+    if(array[(array.length)-1].include?("."))
+      true 
+    else
+      false
+    end
   end
 
   def question?
