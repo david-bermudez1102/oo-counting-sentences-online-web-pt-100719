@@ -3,7 +3,7 @@ require 'pry'
 class String
 
   def sentence?
-    self.split[" "]
+    self = self.split[" "]
     true if(self[self.length-1].include?("."))
   end
 
