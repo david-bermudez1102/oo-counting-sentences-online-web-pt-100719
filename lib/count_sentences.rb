@@ -5,7 +5,7 @@ class String
   def sentence?
     array = self.split(" ")
     if(array[(array.length)-1].include?("."))
-      true 
+      true
     else
       false
     end
