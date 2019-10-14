@@ -31,7 +31,7 @@ class String
 
   def count_sentences
     count = 0
-    if(self.sentence? || self.question? || self.exclamation?)
+    while(self.sentence? || self.question? || self.exclamation?)
       count += 1
     end
   end
