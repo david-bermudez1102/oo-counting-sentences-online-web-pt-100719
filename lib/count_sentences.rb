@@ -32,10 +32,8 @@ class String
   def count_sentences
     count = 0
     array = self.split(" ")
-    while count<array.length do
-      if (self.sentence? || self.question? || self.exclamation?)
-        count += 1
-      end
+    while(self.sentence? || self.question? || self.exclamation?) && count<array.length do
+      count += 1
     end
     count
   end
