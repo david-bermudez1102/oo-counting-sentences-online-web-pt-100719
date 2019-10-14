@@ -31,7 +31,7 @@ class String
 
   def count_sentences
     count = 0
-    if(array[(array.length)-1].include?("!"))
+    if(self.sentence? || self.question? || self.exclamation?)
       count += 1
     end
   end
