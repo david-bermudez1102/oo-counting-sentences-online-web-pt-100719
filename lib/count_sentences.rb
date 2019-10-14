@@ -36,7 +36,7 @@ class String
       if(array[(array.length)-1].include?(".") || array[(array.length)-1].question? || array[(array.length)-1].exclamation?)
         count += 1
       end
-      count
     end
+    count
   end
 end
